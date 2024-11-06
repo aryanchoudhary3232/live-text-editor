@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import socketIOClient from "socket.io-client";
+import Textarea from '@mui/joy/Textarea';
 
 function App() {
   const [text, setText] = useState("");
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="app">
       <span className="heading">Live text editor</span>
-      <input
+      <Textarea
         type="text"
         className="input"
         value={text}
