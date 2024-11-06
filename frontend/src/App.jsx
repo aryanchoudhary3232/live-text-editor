@@ -7,7 +7,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const s = socketIOClient("http://localhost:5174");
+    const s = socketIOClient("https://live-text-editor-backend.onrender.com");
 
     s.on("serverData", (data) => {
       console.log(data);
