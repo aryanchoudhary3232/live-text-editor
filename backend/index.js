@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = socketIO(server, {
   cors: {
-    origin: "https://live-text-editor-700i.onrender.com",
+    origin: "http://localhost:5173",
     method: ["GET", "POST"],
     credentials: true,
   },

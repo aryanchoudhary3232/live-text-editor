@@ -9,7 +9,7 @@
 .heading {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 3rem;
+  font-size: 3rem !important;
   font-weight: bold;
 }
 
